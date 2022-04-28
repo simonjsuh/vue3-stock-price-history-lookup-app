@@ -62,8 +62,6 @@ export default {
         }]
       }
 
-      let myChart = null;
-
       const chartWithKey = Chart.getChart('myChart');
       if (chartWithKey != undefined) {
         chartWithKey.destroy();
@@ -73,8 +71,6 @@ export default {
         type: 'line',
         data: data,
       })
-
-      myChart;
     }
 
     let stockSymbol = ref('IBM');
